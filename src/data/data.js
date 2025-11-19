@@ -1,9 +1,16 @@
-import facebook from "../assets/icon/facebook-brands-solid-full.svg";
-import linkedin from "../assets/icon/linkedin-brands-solid.svg";
-import github from "../assets/icon/github-brands-solid.svg";
-//
+import { FaGithub, FaFacebook, FaLinkedin } from "react-icons/fa";
 import project1 from "../assets/project/1.project.jpg";
-import project2 from "../assets/project/Scumis.jpg";
+import project2 from "../assets/project/2.project.jpg";
+import project3 from "../assets/project/3.project.jpg";
+
+const navLinks = [
+  { id: 1, name: "about", path: "about" },
+  { id: 2, name: "projects", path: "projects" },
+  { id: 3, name: "skills", path: "skills" },
+  { id: 4, name: "experience", path: "experience" },
+  { id: 5, name: "education", path: "education" },
+  { id: 6, name: "contact", path: "contact" },
+];
 
 const myself = {
   name: "Ashraful Rahman Sakil",
@@ -13,43 +20,110 @@ const myself = {
 };
 
 const about = {
-  users: [
-    { id: 1, bio: "I live in Narsingdi Sadar." },
-
+  myself: [
     {
-      id: 2,
-      bio: "I am student of Southeast University study at B.Sc in Computer Science & Engineering.",
+      id: 1,
+      details:
+        "I’m a front-end based passionate about crafting pixel-perfect interfaces and smooth interactions. I love turning design ideas into fast, accessible, and delightful products.",
     },
+  ],
+  programmingLanguage: [
     {
-      id: 3,
-      bio: "I have completed my diploma graduation complete from Narsingdi Polytechnic Institute in Computer Science & Technology.",
+      id: 1,
+      details:
+        "I have skills in ReactJS, NextJS, and most of the strong knowlege JavaScript languages..",
     },
-    
   ],
 };
+
+const educationData = [
+  {
+    id: 1,
+    year: "2023 - present",
+    degree: "Bachelor of Computer Science & Enginnering",
+    institution: "Southeast Uinversity",
+    description: "study present",
+  },
+  {
+    id: 2,
+    year: "2022",
+    degree: "Bachalor of Social Science",
+    institution:
+      "National university of Abdul Mannan Bhuiyan University College",
+    description: "Graduated with good result",
+  },
+  {
+    id: 3,
+    year: "2021",
+    degree: "Diploma in Computer Science & technology",
+    institution: "Narsingdi Polytechnic inistitute",
+    description: "Graduated with CGPA 3.42 out of 4.00",
+  },
+  {
+    id: 4,
+    year: "2018",
+    degree: "Higher Secondary School Certificate",
+    institution: "Hazi Abed ali degree college",
+    description: "Graduated with good result",
+  },
+  {
+    id: 5,
+    year: "2016",
+    degree: "Secondary School Certificate",
+    institution: "Brahmondi K.K.M. Govt High School",
+    description: "Graduated with good result",
+  },
+];
+
+const experience = [
+  {
+    id: 1,
+    year: "2025",
+    degree: "Reactive axcelerator course (reactjs-nextjs)",
+    institution: "learn with sumit platform",
+    description:
+      "i hvae compleated this awesome course. it's course of frontend enginering in-deepth level course & you full fill this course in time you get a build good knowledge ",
+  },
+  {
+    id: 2,
+    year: "2022",
+    degree: "web design & development",
+    institution: "enginnering project development",
+    description:
+      "diploma internship with handsome projects making, process, guidelines & working in software industry",
+  },
+  {
+    id: 3,
+    year: "2019",
+    degree: "360 hours computer basic skill",
+    institution: "Dalil uddin computers",
+    description:
+      "knowledge accquird this training of about in computer office suit.",
+  },
+];
 
 const socialMediaLinks = [
   {
     id: 1,
     platform: "Facebook",
-    icon: facebook,
+    icon: FaFacebook,
     url: "https://facebook.com/ashrafulrahmansakil/",
   },
   {
     id: 2,
     platform: "LinkedIn",
-    icon: linkedin,
+    icon: FaLinkedin,
     url: "https://linkedin.com/in/ashrafulrahmansakil",
   },
   {
     id: 3,
     platform: "GitHub",
-    icon: github,
+    icon: FaGithub,
     url: "https://github.com/ashrafulrahmansakil",
   },
 ];
 
-const skills = {
+const skillsList = {
   frontend: {
     id: 1,
     name: "frontend",
@@ -84,30 +158,31 @@ const skills = {
   },
 
   testing: {
-    id: 6,
+    id: 5,
     name: "testing",
     tskills: ["Jest", "React Testing Library"],
   },
 
   tools: {
-    id: 8,
+    id: 6,
     name: "tools",
     tskills: ["Git", "GitHub", "VS Code", "Postman", "Docker", "Jira", "CI/CD"],
   },
 
-  game: { id: 4, name: "game", mskills: ["Unity", "Unreal Engine"] },
-  design: { id: 5, name: "design", dskills: ["Figma", "Adobe XD"] },
-  content: { id: 7, name: "content", cskills: ["Markdown", "MDX"] },
-  deployment: { id: 9, name: "deployment", dskills: ["Vercel", "Netlify"] },
+  game: { id: 7, name: "game", mskills: ["Unity", "Unreal Engine"] },
+  design: { id: 8, name: "design", dskills: ["Figma", "Adobe XD"] },
+  content: { id: 9, name: "content", cskills: ["Markdown", "MDX"] },
+  deployment: { id: 10, name: "deployment", dskills: ["Vercel", "Netlify"] },
 };
 
-const projects = [
+const ProjectsList = [
   {
     id: 1,
     title: "Project Internship",
     description:
       "this project is about creating a responsive web site using basic html css.",
     thumbnail: project1,
+    tech: ["html", "css"],
     link: "https://project-int.netlify.app/",
     github: "https://github.com/ashrafulrahmansakil/project-int",
   },
@@ -117,18 +192,28 @@ const projects = [
     description:
       "basically this project is for managing exam cards of students. teachers can create exam cards for their students and students can download their exam cards from this system.",
     thumbnail: project2,
+    tech: ["reactjs", "bootstrap"],
     link: "https://scumis.netlify.app/",
     github: "https://github.com/ashrafulrahmansakil/school_mangement",
   },
   {
     id: 3,
-    title: "exam card management system",
+    title: "responsive web designing",
     description:
       "basically this project is for managing exam cards of students. teachers can create exam cards for their students and students can download their exam cards from this system.",
-    thumbnail: project2,
-    link: "https://scumis.netlify.app/",
-    github: "https://github.com/ashrafulrahmansakil/school_mangement",
+    thumbnail: project3,
+    link: "https://ashrafulrahmansakil.github.io/progress/",
+    github: "https://github.com/ashrafulrahmansakil/progress",
   },
 ];
 
-export { about, socialMediaLinks, myself, projects, skills };
+export {
+  educationData,
+  experience,
+  navLinks,
+  about,
+  socialMediaLinks,
+  myself,
+  ProjectsList,
+  skillsList,
+};

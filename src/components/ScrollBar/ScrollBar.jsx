@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 export default function ScrollProgressBar() {
-    // simple scroll progress as a thin top bar
     const [progress, setProgress] = useState(0);
     useEffect(() => {
         const onScroll = () => {
@@ -15,9 +14,8 @@ export default function ScrollProgressBar() {
     }, []);
 
     return (
-        <div className="fixed left-0 right-0 h-1 z-50 top-[4rem] bg-transparent">
-
+        <div className="fixed left-0 right-0 h-1 z-30 top-[4rem] bg-transparent">
             <div style={{ width: `${progress}%`, height: 4, background: 'linear-gradient(90deg,#06b6d4,#7c3aed)' }} />
         </div>
-    );
+    ); 
 }

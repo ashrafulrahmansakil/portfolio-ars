@@ -1,13 +1,10 @@
-import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import photo from "../assets/sakil.jpg";
 import { HashLink } from 'react-router-hash-link';
+import TypewriterFramer from './../components/TypeWritter/TypeWritter';
 
 export default function Hero() {
-
-  const NAME = "Ashraful Rahman Sakil";
   const TAGLINE = "I build beautiful web experiences.";
-
   return (
     <div id='home' className="mt-10 scroll-mt-96">
       <motion.section
@@ -24,14 +21,12 @@ export default function Hero() {
       >
         <div className="grid md:grid-cols-2 gap-6 items-center">
           <motion.div initial={{ x: -30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.1 }}>
-            <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
-              Welcome <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#60a5fa] via-[#7c3aed] to-[#fb7185]">{NAME.split(' ')[0]}</span>
-              <br />
+            <span className="text-shadow-md text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-extrabold leading-tight">
+              Welcome i am <TypewriterFramer className='bg-gradient-to-r from-[#60a5fa] via-[#7c3aed] to-[#fb7185] bg-clip-text text-transparent' />
               {TAGLINE}
-            </h1>
-
+            </span>
             <p className="mt-4 text-slate-800 dark:text-slate-100 max-w-xl">
-              Clean UI, thoughtful interactions, and performance-focused frontends — React, Nextjs + Tailwind specialist.
+              Clean UI, thoughtful interactions, and performance-focused frontends Reactjs, Nextjs + Tailwind specialist.
             </p>
 
             <div className="mt-6 gap-3 grid sm:grid-cols-2 sm:flex">
@@ -50,9 +45,9 @@ export default function Hero() {
 
           {/* Avatar Card */}
           <motion.div initial={{ x: 30, opacity: 0 }} animate={{ x: 0, opacity: 1 }} transition={{ delay: 0.2 }}>
-            <div className="relative w-full h-56 md:h-64 rounded-xl overflow-hidden shadow-2xl" style={{ background: "linear-gradient(180deg,#071024, rgba(12,40,80,0.8))" }}>
+            <div className="relative w-full h-60 md:h-72 rounded-xl overflow-hidden shadow-2xl" style={{ background: "linear-gradient(180deg,#071024, rgba(12,40,80,0.8))" }}>
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-36 h-36 md:w-44 md:h-44 rounded-full border-4 border-white/10 flex items-center justify-center text-xl font-semibold bg-gradient-to-br from-[#06b6d4]/30 to-[#7c3aed]/30">
+                <div className="w-36 h-36 md:w-52 md:h-52 rounded-full border-4 border-white/10 flex items-center justify-center text-xl font-semibold bg-gradient-to-br from-[#06b6d4]/30 to-[#7c3aed]/30">
                   <img src={photo} alt="Ashraful Rahman Sakil" className="w-full h-full object-cover rounded-full" />
 
                 </div>
