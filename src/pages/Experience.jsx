@@ -19,13 +19,10 @@ export default function Experience() {
 
     return (
         <motion.section id="experience" className="scroll-mt-12 p-6 rounded-xl" initial="hidden" whileInView="show" viewport={{ once: true }} variants={container} >
-
-
             <h1 className='text-2xl font-bold mb-4'>Experience</h1>
-            <div className='relative border-l-4 border-cyan-500' variants={itemUp}>
-
+            <motion.div className='relative border-l-4 border-cyan-500 ml-6' variants={itemUp}>
                 {experience.map((ex) => (
-                    <div key={ex.id} className="mb-5 ml-6 relative capitalize">
+                    <motion.div key={ex.id} className="mb-5 ml-6 relative capitalize" variants={itemUp}>
                         {/* Circle marker */}
                         <span className="absolute -left-9 top-1.5 w-5 h-5 bg-cyan-700 rounded-full border-2 border-white"></span>
                         <time className="mb-1 text-md font-semibold text-cyan-500 block">{ex.year}</time>
@@ -33,9 +30,9 @@ export default function Experience() {
                         <p className="font-bold ">{ex.institution}</p>
                         <p className="mt-2 ">{ex.description}</p>
 
-                    </div>
+                    </motion.div>
                 ))}
-            </div>
+            </motion.div>
         </motion.section>
     )
 }
