@@ -2,6 +2,8 @@
 import { motion } from 'framer-motion';
 import cover from '../assets/cover.jpg';
 import { about } from '../data/data';
+import Button from './../components/Button/Button';
+import { Link } from 'react-router-dom';
 export default function About() {
   const container = {
     hidden: {},
@@ -34,18 +36,11 @@ export default function About() {
                 <span key={my.id}>{my.details}</span>
               ))}
             </p>
+            
             <br />
-            <p className="text-slate-800 dark:text-slate-50 text-justify text-xl">
-              {about.programmingLanguage.map((my) => (
-                <span key={my.id}>{my.details}</span>
-              ))}
-            </p>
-            <ul className="pt-2 grid grid-cols-4 gap-2">
-              <li className="text-sm">Nextjs</li>
-              <li className="text-sm">Reactjs</li>
-              <li className="text-sm">MongoDB</li>
-              <li className="text-sm"></li>
-            </ul>
+            <Link to={about.myself[0].selfResume} target="_blank" rel="noopener noreferrer">
+              <Button className=" border p-2 rounded-xl uppercase w-32 text-white cursor-pointer hover:scale-[1.02] transform transition" name="resume / cv" style={{ background: "linear-gradient(90deg,#06b6d4,#7c3aed)" }}></Button>
+            </Link>
           </div>
           <div>
           </div>

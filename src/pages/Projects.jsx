@@ -28,22 +28,22 @@ export default function Projects() {
             <motion.article
               key={p.id}
               variants={itemUp}
-              className="rounded-2xl dark:border-slate-300 border-slate-300 p-5 shadow-xl backdrop-blur-sm border  hover:scale-95 transition-transform bg-gradient-to-b from-white/2 to-transparent"
+              className="rounded dark:border-slate-300 border-slate-300 p-5 shadow backdrop-blur-sm border  hover:scale-95 transition-transform bg-gradient-to-b from-white/2 to-transparent"
             >
-              <div className="">
-                <img src={p.thumbnail} alt={p.title} className='w-fit h-50' />
+              <div>
+                <img src={p.thumbnail} alt={p.title} className='w-fit h-50 rounded' />
                 <div>
                   <h3 className="font-semibold text-lg capitalize pt-2">{p.title}</h3>
-                  <p className="mt-2 text-sm text-slate-300">{p.desc}</p>
-                  <div className="mt-3 flex flex-wrap gap-2 text-sm capitalize">
+                  <p className="mt-2 text-sm dark:text-slate-50 capitalize">{p.description}</p>
+                  <div className=" my-2 uppercase">
                     {p.tech?.map((t) => (
-                      <span key={t} className="px-2 py-1 rounded-md border border-white/5">{t}</span>
+                      <span key={t} className=" dark:bg-slate-800 bg-slate-200 px-1 m-1 rounded">{t}</span>
                     ))}
                   </div>
                 </div>
                 <div className="flex flex-row gap-2 text-sm">
-                  <Link to={p.link} target='_blank' className="px-3 py-1 rounded-md border hover:bg-slate-200"><FaEye /></Link>
-                  <Link to={p.github} target='_blank' className="px-3 py-1 rounded-md border hover:bg-slate-200"><FaCode /></Link>
+                  <Link to={p.link} target='_blank' className="px-3 py-1 rounded-md border dark:hover:bg-cyan-700"><FaEye /></Link>
+                  <Link to={p.github} target='_blank' className="px-3 py-1 rounded-md border dark:hover:bg-cyan-700"><FaCode /></Link>
                 </div>
               </div>
             </motion.article>

@@ -36,7 +36,7 @@ export default function Navbar() {
         {/* Mobile Hamburger */}
         <button
           onClick={toggleSidebar}
-          className=" z-[10000] md:hidden p-2 rounded text-slate-700 dark:text-white"
+          className=" z-[10000] md:hidden p-2 rounded text-slate-700 dark:text-white cursor-pointer"
         >
           {isOpen ? <FaAlignCenter size={28} /> : <FaAlignCenter size={28} />}
         </button>
@@ -50,7 +50,7 @@ export default function Navbar() {
         <div className=" justify-between items-center px-4 py-4 dark:border-slate-700 ">
 
           <button onClick={toggleSidebar}>
-            <FaX size={24} className="text-slate-300 dark:text-white" />
+            <FaX size={24} className="text-slate-300 dark:text-white  cursor-pointer" />
           </button>
 
           <ul className="flex flex-col space-y-4  dark:text-white">
