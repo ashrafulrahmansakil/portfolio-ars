@@ -27,8 +27,8 @@ export default function Experience() {
                         <span className="absolute -left-9 top-1.5 w-5 h-5 bg-cyan-700 rounded-full border-2 border-white"></span>
                         <time className="mb-1 text-md font-semibold text-cyan-500 block">{ex.year}</time>
                         <h3 className="text-md  font-semibold">{ex.degree}</h3>
-                        <p className="font-bold ">{ex.institution}</p>
-                        <p className="mt-2 ">{ex.description}</p>
+                        <p className="font-bold text-slate-500">{ex.institution}</p>
+                        <p className="mt-2 text-slate-500">{ex.description}</p>
 
                     </motion.div>
                 ))}

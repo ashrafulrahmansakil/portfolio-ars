@@ -29,8 +29,8 @@ export default function Education() {
                         <span className="absolute -left-9 top-1.5 w-5 h-5 bg-cyan-700 rounded-full border-2 border-white"></span>
                         <time className="mb-1 text-md font-semibold text-cyan-500 block">{edu.year}</time>
                         <h3 className="text-md  font-semibold">{edu.degree}</h3>
-                        <p className="font-bold text-gray-600">{edu.institution}</p>
-                        <p className="mt-2 text-gray-700">{edu.description}</p>
+                        <p className="font-bold text-slate-500">{edu.institution}</p>
+                        <p className="mt-2 text-slate-500">{edu.description}</p>
                     </motion.div>
                 ))}
             </motion.div>
