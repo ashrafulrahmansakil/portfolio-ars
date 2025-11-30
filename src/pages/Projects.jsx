@@ -33,7 +33,7 @@ export default function Projects() {
               <div>
                 <img src={p.thumbnail} alt={p.title} className='w-fit h-50 rounded' />
                 <div>
-                  <h3 className="font-semibold text-lg capitalize pt-2">{p.title}</h3>
+                  <h3 className="font-semibold text-lg capitalize pt-2 ">{p.title}</h3>
                   <p className="mt-2 text-sm dark:text-slate-50 capitalize">{p.description}</p>
                   <div className=" my-2 uppercase">
                     {p.tech?.map((t) => (

@@ -24,7 +24,7 @@ const about = {
     {
       id: 1,
       selfResume:
-        "https://drive.google.com/file/d/1IrIGofZ5Q5u9Vv_uS9JdXmrp-h-tTyQP/view?usp=sharing",
+        "https://drive.google.com/file/d/1NTgtYDOgWW30pPDw2gOEmy6fiay962hf/view?usp=drive_link",
       details:
         "I’m a front-end based passionate about crafting pixel-perfect interfaces and smooth interactions. I love turning design ideas into fast, accessible, and delightful products. With a strong foundation in HTML, CSS, and JavaScript, I specialize in ReactJS and NextJS to build dynamic web applications with modern.",
     },
@@ -201,36 +201,36 @@ const ProjectsList = [
     link: "https://scumis.netlify.app/",
     github: "https://github.com/ashrafulrahmansakil/school_mangement",
   },
-  // {
-  //   id: 4,
-  //   title: "exam card management system",
-  //   description:
-  //     "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
-  //   thumbnail: project2,
-  //   tech: ["reactjs", "bootstrap"],
-  //   link: "https://scumis.netlify.app/",
-  //   github: "https://github.com/ashrafulrahmansakil/school_mangement",
-  // },
-  // {
-  //   id: 5,
-  //   title: "exam card management system",
-  //   description:
-  //     "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
-  //   thumbnail: project2,
-  //   tech: ["reactjs", "bootstrap"],
-  //   link: "https://scumis.netlify.app/",
-  //   github: "https://github.com/ashrafulrahmansakil/school_mangement",
-  // },
-  // {
-  //   id: 6,
-  //   title: "exam card management system",
-  //   description:
-  //     "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
-  //   thumbnail: project2,
-  //   tech: ["reactjs", "bootstrap"],
-  //   link: "https://scumis.netlify.app/",
-  //   github: "https://github.com/ashrafulrahmansakil/school_mangement",
-  // },
+  {
+    id: 4,
+    title: "exam card management system",
+    description:
+      "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
+    thumbnail: project2,
+    tech: ["reactjs", "bootstrap"],
+    link: "https://scumis.netlify.app/",
+    github: "https://github.com/ashrafulrahmansakil/school_mangement",
+  },
+  {
+    id: 5,
+    title: "exam card management system",
+    description:
+      "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
+    thumbnail: project2,
+    tech: ["reactjs", "bootstrap"],
+    link: "https://scumis.netlify.app/",
+    github: "https://github.com/ashrafulrahmansakil/school_mangement",
+  },
+  {
+    id: 6,
+    title: "exam card management system",
+    description:
+      "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
+    thumbnail: project2,
+    tech: ["reactjs", "bootstrap"],
+    link: "https://scumis.netlify.app/",
+    github: "https://github.com/ashrafulrahmansakil/school_mangement",
+  },
 ];
 
 export {
