@@ -24,7 +24,7 @@ export default function Experience() {
       whileInView='show'
       viewport={{ once: true }}
       variants={container}>
-      <h1 className='text-2xl font-bold mb-4 uppercase'>
+      <h1 className='lg:text-2xl sm:text-[1.25rem] font-bold mb-4 uppercase'>
         technical Experience
       </h1>
       <motion.div

@@ -24,13 +24,15 @@ export default function Skills() {
       whileInView='show'
       viewport={{ once: true }}
       variants={container}>
-      <motion.h1 variants={itemUp} className='text-2xl font-bold uppercase'>
-        Skills
+      <motion.h1
+        variants={itemUp}
+        className='md:text-2xl font-bold uppercase mb-5 bg-slate-600 text-slate-100 text-center rounded-br-2xl rounded-tl-2xl p-2'>
+        Technical Skills
       </motion.h1>
 
       <motion.p
         variants={itemUp}
-        className='font-semibold text-lg  uppercase bg-slate-200 dark:bg-cyan-950 w-64 text-center rounded'>
+        className='font-semibold text-lg  uppercase bg-slate-200 dark:bg-cyan-950 sm:w-64 lg:w-1/2 text-center rounded'>
         {skillsList.pLanguage.name}
       </motion.p>
       <motion.div
@@ -47,7 +49,7 @@ export default function Skills() {
       </motion.div>
       <motion.p
         variants={itemUp}
-        className='font-semibold text-lg mt-5 uppercase bg-slate-200 dark:bg-cyan-950 w-64 text-center rounded'>
+        className='font-semibold text-lg mt-5 uppercase bg-slate-200 dark:bg-cyan-950 sm:w-64 lg:w-1/2 text-center rounded'>
         {skillsList.frontend.name}
       </motion.p>
       <motion.div
@@ -64,7 +66,7 @@ export default function Skills() {
       </motion.div>
       <motion.p
         variants={itemUp}
-        className='font-semibold text-lg mt-5 uppercase bg-slate-200 dark:bg-cyan-950 w-64 text-center rounded'>
+        className='font-semibold text-lg mt-5 uppercase bg-slate-200 dark:bg-cyan-950 sm:w-64 lg:w-1/2 text-center rounded'>
         {skillsList.backend.name}
       </motion.p>
       <motion.div
@@ -81,7 +83,7 @@ export default function Skills() {
       </motion.div>
       <motion.p
         variants={itemUp}
-        className='font-semibold text-lg mt-5 uppercase bg-slate-200 dark:bg-cyan-950 w-64 text-center rounded'>
+        className='font-semibold text-lg mt-5 uppercase bg-slate-200 dark:bg-cyan-950 sm:w-64 lg:w-1/2 text-center rounded'>
         {skillsList.tools.name}
       </motion.p>
       <motion.div
@@ -98,7 +100,7 @@ export default function Skills() {
       </motion.div>
       <motion.p
         variants={itemUp}
-        className='font-semibold text-lg mt-5 uppercase bg-slate-200 dark:bg-cyan-950 w-64 text-center rounded'>
+        className='font-semibold text-lg mt-5 uppercase bg-slate-200 dark:bg-cyan-950 sm:w-64 lg:w-1/2  text-center rounded'>
         {skillsList.ai.name}
       </motion.p>
       <motion.div
