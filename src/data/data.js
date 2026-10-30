@@ -31,6 +31,51 @@ const about = {
   ],
 };
 
+const jobExperience = [
+  {
+    id: 1,
+    year: "2026 - present",
+    position: "Computer  Operator",
+    company: "Narsingdi Govt. Girls High School, Narsingdi",
+    description:
+      "this is my current job. I am working as a computer operator in this school. I am responsible for managing the school's computer systems and networks. I am also responsible for maintaining the school's website and social media accounts.",
+  },
+  {
+    id: 2,
+    year: "2023 - 2025",
+    position: "Computer  Operator",
+    company: "Brahmondi Kamini Kishore Moulik Govt. High School ",
+    description:
+      "it was a first job experence in my career. I have worked as a computer operator in this school for 2 years. I have learned a lot about computer and office work. I have also learned how to work in a team and how to communicate with people.",
+  },
+];
+const experience = [
+  {
+    id: 1,
+    year: "2025",
+    degree: "Reactive axcelerator course (reactjs-nextjs)",
+    institution: "learn with sumit platform",
+    description:
+      "i hvae compleated this awesome course. it's course of frontend enginering in-deepth level course & you full fill this course in time you get a build good knowledge ",
+  },
+  {
+    id: 2,
+    year: "2022",
+    degree: "web design & development",
+    institution: "enginnering project development",
+    description:
+      "diploma internship with handsome projects making, process, guidelines & working in software industry",
+  },
+  {
+    id: 3,
+    year: "2019",
+    degree: "360 hours computer basic skill",
+    institution: "Dalil uddin computers",
+    description:
+      "knowledge accquird this training of about in computer office suit.",
+  },
+];
+
 const educationData = [
   {
     id: 1,
@@ -70,33 +115,6 @@ const educationData = [
   },
 ];
 
-const experience = [
-  {
-    id: 1,
-    year: "2025",
-    degree: "Reactive axcelerator course (reactjs-nextjs)",
-    institution: "learn with sumit platform",
-    description:
-      "i hvae compleated this awesome course. it's course of frontend enginering in-deepth level course & you full fill this course in time you get a build good knowledge ",
-  },
-  {
-    id: 2,
-    year: "2022",
-    degree: "web design & development",
-    institution: "enginnering project development",
-    description:
-      "diploma internship with handsome projects making, process, guidelines & working in software industry",
-  },
-  {
-    id: 3,
-    year: "2019",
-    degree: "360 hours computer basic skill",
-    institution: "Dalil uddin computers",
-    description:
-      "knowledge accquird this training of about in computer office suit.",
-  },
-];
-
 const socialMediaLinks = [
   {
     id: 1,
@@ -119,8 +137,14 @@ const socialMediaLinks = [
 ];
 
 const skillsList = {
-  frontend: {
+  pLanguage: {
     id: 1,
+    name: "programming language",
+    plskills: ["JavaScript", "TypeScript", "C"],
+  },
+
+  frontend: {
+    id: 2,
     name: "frontend",
     fskills: [
       "HTML",
@@ -137,37 +161,49 @@ const skillsList = {
   },
 
   backend: {
-    id: 2,
+    id: 3,
     name: "backend",
     bskills: ["Node.js", "Express", "MongoDB", "GraphQL", "Firebase"],
   },
   database: {
-    id: 3,
+    id: 4,
     name: "database",
     dskills: ["MongoDB", "MySQL", "PostgreSQL", "Prisma"],
   },
   mobile: {
-    id: 4,
+    id: 5,
     name: "mobile",
     mskills: ["React Native", "Flutter"],
   },
 
   testing: {
-    id: 5,
+    id: 6,
     name: "testing",
     tskills: ["Jest", "React Testing Library"],
   },
 
   tools: {
-    id: 6,
+    id: 7,
     name: "tools",
     tskills: ["Git", "GitHub", "VS Code", "Postman", "Docker", "Jira", "CI/CD"],
   },
 
-  game: { id: 7, name: "game", mskills: ["Unity", "Unreal Engine"] },
-  design: { id: 8, name: "design", dskills: ["Figma", "Adobe XD"] },
-  content: { id: 9, name: "content", cskills: ["Markdown", "MDX"] },
-  deployment: { id: 10, name: "deployment", dskills: ["Vercel", "Netlify"] },
+  game: { id: 8, name: "game", mskills: ["Unity", "Unreal Engine"] },
+  design: { id: 9, name: "design", dskills: ["Figma", "Adobe XD"] },
+  content: { id: 10, name: "content", cskills: ["Markdown", "MDX"] },
+  deployment: { id: 11, name: "deployment", dskills: ["Vercel", "Netlify"] },
+  ai: {
+    id: 12,
+    name: "Artifical Intelligence",
+    aiskills: [
+      "ChatGPT",
+      "Gemini",
+      "Codex",
+      "Claude",
+      "Agentic AI",
+      "Automation",
+    ],
+  },
 };
 
 const ProjectsList = [
@@ -201,39 +237,10 @@ const ProjectsList = [
     link: "https://scumis.netlify.app/",
     github: "https://github.com/ashrafulrahmansakil/school_mangement",
   },
-  {
-    id: 4,
-    title: "exam card management system",
-    description:
-      "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
-    thumbnail: project2,
-    tech: ["reactjs", "bootstrap"],
-    link: "https://scumis.netlify.app/",
-    github: "https://github.com/ashrafulrahmansakil/school_mangement",
-  },
-  {
-    id: 5,
-    title: "exam card management system",
-    description:
-      "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
-    thumbnail: project2,
-    tech: ["reactjs", "bootstrap"],
-    link: "https://scumis.netlify.app/",
-    github: "https://github.com/ashrafulrahmansakil/school_mangement",
-  },
-  {
-    id: 6,
-    title: "exam card management system",
-    description:
-      "this project basicially making by exam seat card management system. if you are a teacher you can create exam seat card for your students & students can download their exam seat card from this system.",
-    thumbnail: project2,
-    tech: ["reactjs", "bootstrap"],
-    link: "https://scumis.netlify.app/",
-    github: "https://github.com/ashrafulrahmansakil/school_mangement",
-  },
 ];
 
 export {
+  jobExperience,
   educationData,
   experience,
   navLinks,
