@@ -24,7 +24,7 @@ export default function Education() {
       whileInView='show'
       viewport={{ once: true }}
       variants={container}>
-      <h2 className='uppercase font-bold mb-8 text-xl'>
+      <h2 className='uppercase font-bold mb-8 text-2xl'>
         Educational qualification
       </h2>
 
@@ -41,8 +41,10 @@ export default function Education() {
             <time className='mb-1 text-md font-semibold text-cyan-500 block'>
               {edu.year}
             </time>
-            <h3 className='text-md  font-semibold'>{edu.degree}</h3>
-            <p className='font-bold text-slate-500'>{edu.institution}</p>
+            <h3 className='text-md  font-semibold capitalize'>{edu.degree}</h3>
+            <p className='font-bold text-slate-500 capitalize'>
+              {edu.institution}
+            </p>
             <p className='mt-2 text-slate-500 capitalize'>{edu.description}</p>
           </motion.div>
         ))}

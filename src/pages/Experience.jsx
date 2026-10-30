@@ -40,8 +40,10 @@ export default function Experience() {
             <time className='mb-1 text-md font-semibold text-cyan-500 block'>
               {ex.year}
             </time>
-            <h3 className='text-md  font-semibold'>{ex.degree}</h3>
-            <p className='font-bold text-slate-500'>{ex.institution}</p>
+            <h3 className='text-md  font-semibold capitalize'>{ex.degree}</h3>
+            <p className='font-bold text-slate-500 capitalize'>
+              {ex.institution}
+            </p>
             <p className='mt-2 text-slate-500 capitalize'>{ex.description}</p>
           </motion.div>
         ))}

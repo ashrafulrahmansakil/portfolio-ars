@@ -24,7 +24,7 @@ export default function JobExperience() {
       whileInView='show'
       viewport={{ once: true }}
       variants={container}>
-      <h2 className='uppercase font-bold mb-8 text-xl'>Job Experience</h2>
+      <h2 className='uppercase font-bold mb-8 text-2xl'>Job Experience</h2>
 
       <motion.div
         variants={itemUp}
@@ -39,8 +39,10 @@ export default function JobExperience() {
             <time className='mb-1 text-md font-semibold text-cyan-500 block'>
               {job.year}
             </time>
-            <h3 className='text-md  font-semibold'>{job.position}</h3>
-            <p className='font-bold text-slate-500'>{job.company}</p>
+            <h3 className='text-md  font-semibold capitalize'>
+              {job.position}
+            </h3>
+            <p className='font-bold text-slate-500 capitalize'>{job.company}</p>
             <p className='mt-2 text-slate-500 capitalize'>{job.description}</p>
           </motion.div>
         ))}

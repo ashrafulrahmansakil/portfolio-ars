@@ -24,7 +24,7 @@ export default function Contact() {
       viewport={{ once: true }}
       className='scroll-mt-10 max-w-6xl mx-auto p-6 rounded-xl'>
       <h2 className='text-2xl font-bold uppercase'>Contact</h2>
-      <p className='text-center text-slate-300 mb-6'>
+      <p className='capitalize text-slate-900 dark:text-slate-300 mb-6'>
         Let’s create something amazing together — send a quick message.
       </p>
 
@@ -48,7 +48,7 @@ export default function Contact() {
           id='message'
           value={form.message}
           onChange={handleChange}
-          rows={5}
+          rows={10}
           placeholder='Your Message'
           className='md:col-span-2 p-3 rounded-md border border-sky/5  '
         />
