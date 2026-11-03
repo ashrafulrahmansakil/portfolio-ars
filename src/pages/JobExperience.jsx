@@ -24,7 +24,7 @@ export default function JobExperience() {
       whileInView='show'
       viewport={{ once: true }}
       variants={container}>
-      <h2 className='uppercase font-bold mb-8 text-2xl'>Job Experience</h2>
+      <h2 className='text-2xl font-bold uppercase underline underline-offset-4 mb-3'>Job Experience</h2>
 
       <motion.div
         variants={itemUp}

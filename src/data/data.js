@@ -15,7 +15,7 @@ const navLinks = [
 const myself = {
   name: "Ashraful Rahman Sakil",
   title: "Welcome to my portfolio website",
-  subTitle: "I am a Frontend Based Full Stack Developer",
+  subTitle: "I am a frontend-focused, AI-powered full-stack developer.",
   bio: "You are welcome to understand, know, and be aware of my skills clearly.",
 };
 
@@ -24,9 +24,9 @@ const about = {
     {
       id: 1,
       selfResume:
-        "https://drive.google.com/file/d/1NTgtYDOgWW30pPDw2gOEmy6fiay962hf/view?usp=drive_link",
+        "https://drive.google.com/file/d/1vVF4D_zpTPkZjyctigpflA_0JJfNEDf2/view?usp=sharing",
       details:
-        "I’m a front-end based passionate about crafting pixel-perfect interfaces and smooth interactions. I love turning design ideas into fast, accessible, and delightful products. With a strong foundation in HTML, CSS, and JavaScript, I specialize in ReactJS and NextJS to build dynamic web applications with modern.",
+        "I’m a frontend-focused, AI-powered full-stack developer. passionate about crafting pixel-perfect interfaces and smooth interactions. I love turning design ideas into fast, accessible, and delightful products. With a strong foundation in HTML, CSS, and JavaScript, I specialize in ReactJS and NextJS to build dynamic web applications with modern. I’m a lifelong learner, always exploring new technologies and best practices to stay ahead in the ever-evolving world of web development. I thrive in collaborative environments, where I can contribute my skills and learn from others. My goal is to create user-centric experiences that leave a lasting impact. Ai-powered development is my passion, and I’m excited to bring innovative solutions to life through code.",
     },
   ],
 };

@@ -22,7 +22,7 @@ export default function Projects() {
   return (
     <>
       <motion.section className='scroll-mt-12 p-6' id='projects'>
-        <motion.h2 className='text-2xl font-bold uppercase'>Projects</motion.h2>
+        <motion.h2 className='text-2xl font-bold uppercase underline underline-offset-4 mb-3'>Projects</motion.h2>
         <motion.div
           className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6 '
           variants={container}

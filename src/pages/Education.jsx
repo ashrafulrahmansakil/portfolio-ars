@@ -24,7 +24,7 @@ export default function Education() {
       whileInView='show'
       viewport={{ once: true }}
       variants={container}>
-      <h2 className='uppercase font-bold mb-8 text-2xl'>
+      <h2 className='text-2xl font-bold uppercase underline underline-offset-4 mb-3'>
         Educational qualification
       </h2>
 

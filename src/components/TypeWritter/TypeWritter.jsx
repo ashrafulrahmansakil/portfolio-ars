@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 
 export default function Typewriter({
-  words = ["Ashraful Rahman Sakil", "Nextjs web Developer", "Frontend web Developer"],
-  typingSpeed = 100,
-  deletingSpeed = 50,
-  pause = 1500,
+  words = ["Ashraful Rahman Sakil", "Nextjs web Developer", "agentic ai specialist"],
+  typingSpeed = 150,
+  deletingSpeed = 100,
+  pause = 1000,
   className = "",
 }) {
   const [index, setIndex] = useState(0);

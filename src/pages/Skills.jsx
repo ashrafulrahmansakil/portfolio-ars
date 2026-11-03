@@ -26,7 +26,7 @@ export default function Skills() {
       variants={container}>
       <motion.h1
         variants={itemUp}
-        className='md:text-2xl font-bold uppercase mb-5 bg-slate-600 text-slate-100 text-center rounded-br-2xl rounded-tl-2xl p-2'>
+        className='text-2xl font-bold uppercase underline underline-offset-4 mb-3'>
         Technical Skills
       </motion.h1>
 

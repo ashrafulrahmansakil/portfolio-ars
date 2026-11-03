@@ -27,14 +27,14 @@ export default function About() {
         whileInView='show'
         viewport={{ once: true }}
         variants={container}>
-        <motion.h2 variants={itemUp} className='text-2xl font-bold uppercase'>
+        <motion.h2 variants={itemUp} className='text-2xl font-bold uppercase underline underline-offset-4 mb-3'>
           About
         </motion.h2>
         <motion.div
           variants={itemUp}
           className='mt-4 md:flex gap-6 items-start'>
           <div className='md:w-1/3'>
-            <div className='w-52 h-60 rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-[#06b6d4]/20 to-[#7c3aed]/10 flex items-center justify-center'>
+            <div className='w-56 h-64 rounded-3xl overflow-hidden shadow-xl bg-gradient-to-br from-[#06b6d4]/20 to-[#7c3aed]/10 flex items-center justify-center'>
               <div className='text-lg font-semibold'>
                 <img
                   src={cover}

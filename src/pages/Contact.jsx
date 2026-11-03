@@ -23,7 +23,7 @@ export default function Contact() {
       transition={{ duration: 0.6, ease: "easeOut" }}
       viewport={{ once: true }}
       className='scroll-mt-10 max-w-6xl mx-auto p-6 rounded-xl'>
-      <h2 className='text-2xl font-bold uppercase'>Contact</h2>
+      <h2 className='text-2xl font-bold uppercase underline underline-offset-4 mb-3'>Contact</h2>
       <p className='capitalize text-slate-900 dark:text-slate-300 mb-6'>
         Let’s create something amazing together — send a quick message.
       </p>

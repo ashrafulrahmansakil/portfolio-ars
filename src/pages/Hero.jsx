@@ -23,14 +23,14 @@ export default function Hero() {
             initial={{ x: -30, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ delay: 0.1 }}>
-            <span className='text-shadow-md text-2xl sm:text-3xl md:text-3xl lg:text-4xl font-extrabold leading-tight'>
-              Welcome i am{" "}
-              <TypewriterFramer className='bg-gradient-to-r from-[#60a5fa] via-[#7c3aed] to-[#fb7185] bg-clip-text text-transparent' />
+            <span className='text-shadow-md text-2xl md:text-2xl lg:text-3xl font-bold capitalize'>
+              Welcome i am
+              <TypewriterFramer className='bg-gradient-to-r from-[#60a5fa] via-[#7c3aed] to-[#fb7185] bg-clip-text text-transparent uppercase' />
               {TAGLINE}
             </span>
-            <p className='mt-4 text-slate-800 dark:text-slate-100 max-w-xl'>
+            <p className='mt-4 text-slate-900 dark:text-slate-50 max-w-xl'>
               Clean UI, thoughtful interactions, and performance-focused
-              frontends Reactjs, Nextjs + Tailwind specialist.
+              frontends Reactjs, Nextjs + Tailwindcss with Artificial Intelligence based specialist.
             </p>
 
             <div className='mt-6 gap-3 grid sm:grid-cols-2 sm:flex'>
@@ -63,7 +63,7 @@ export default function Hero() {
                   "linear-gradient(180deg,#071024, rgba(12,40,80,0.8))",
               }}>
               <div className='absolute inset-0 flex items-center justify-center'>
-                <div className='w-36 h-36 md:w-52 md:h-52 rounded-full border-4 border-white/10 flex items-center justify-center text-xl font-semibold bg-gradient-to-br from-[#06b6d4]/30 to-[#7c3aed]/30'>
+                <div className='w-48 h-48 md:w-60 md:h-60 rounded-full border-4 border-white/10 flex items-center justify-center text-xl font-semibold bg-gradient-to-br from-[#06b6d4]/30 to-[#7c3aed]/30'>
                   <img
                     src={photo}
                     alt='Ashraful Rahman Sakil'
